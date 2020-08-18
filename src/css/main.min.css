@@ -3121,7 +3121,7 @@ a, button, input {
 
 .main {
   height: 90vh;
-  background: #e0e0e2 url(src/assets/img/dest/1.jpg) center bottom/cover;
+  background: #e0e0e2 url(src/app/assets/img/dest/1.jpg) center bottom/cover;
   position: relative;
   padding: 70px 0 200px
 }
@@ -3337,12 +3337,17 @@ a, button, input {
 }
 
 .item__btn {
+  color: #5f4720;
   cursor: pointer;
   background: #fff;
   -webkit-border-radius: 15px;
   border-radius: 15px;
   padding: 10px 20px;
-  border: 2px solid #a07534
+  border: 2px solid #a07534;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .item__more {

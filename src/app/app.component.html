@@ -1,0 +1,58 @@
+<header class="header" id="header">
+  <div class="container">
+    <div class="row">
+      <div class="log-12 nav-space">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                контакты
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                адрес
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                о нас
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="main" id="main">
+  <img src="assets/img/dest/кабинет.png" class="user" id="user">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <a href="/" class="main__logo">
+          <img src="assets/img/dest/cream-sale-logo.png" alt="" class="main__logo-img">
+        </a>
+        <div class="search">
+          <h1 class="search__title">
+            идеальная покупка в 3 клика
+          </h1>
+          <div class="search__space">
+            <input type="text" class="search__input" [(ngModel)]="searchText">
+            <img src="assets/img/dest/search.png" alt="" (click)="search(searchText)">
+          </div>
+        </div>
+        <div class="icons">
+          <img src="assets/img/dest/growth.png" alt="" class="icons__img">
+          <img src="assets/img/dest/gift.png" alt="" class="icons__img">
+          <img src="assets/img/dest/agreement.png" alt="" class="icons__img">
+          <img src="assets/img/dest/корзина.png" alt="" class="icons__img">
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="assets/img/dest/CI logo.png" alt="" class="main__company main__company_left">
+  <img src="assets/img/dest/unicap.png" alt="" class="main__company main__company_right">
+</section>
+<app-search *ngIf="isFound" [products]="products"></app-search>
+<script src="assets/js/scripts.min.js"></script>
